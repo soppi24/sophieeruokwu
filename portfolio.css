@@ -1,0 +1,280 @@
+/* General Styling */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('cormorantGaramond.otf');
+}
+
+* {
+    font-family: 'Cormorant Garamond', sans-serif; /* Universal Font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A292B;
+    color: #EFD2CE;
+}
+
+/* Main Navigation Bar */
+header.main-navbar {
+    position: relative;
+    width: 100%;
+    background-color: #3A292B;
+    padding: 1rem 0;
+    z-index: 1000;
+}
+
+header.main-navbar nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.main-navbar nav ul li a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #EFEDE7;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+header.main-navbar nav ul li a:hover {
+    color: grey;
+}
+
+/* Portfolio Navigation Bar */
+header.portfolio-navbar {
+    background-color: #3A292B;
+    padding: 1rem;
+    text-align: center;
+}
+
+header.portfolio-navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header.portfolio-navbar nav ul li a {
+    text-decoration: none;
+    color: #EFEDE7;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header.portfolio-navbar nav ul li a:hover {
+    background-color: #EAB0AA;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project {
+    width: 300px;
+    background-color: #3E2F2F;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #EFEDE7;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #3A292B;
+}
+
+/* Project Box */
+.project {
+    width: 300px;
+    background-color: #3E2F2F;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Thumbnail (Rounded Image) */
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Project Title */
+.project h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #EFD2CE;
+}
+
+/* Project Description */
+.project p {
+    font-size: 0.9rem;
+    color: #EFEDE7;
+}
+
+/* Category Tag */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #EAB0AA;
+    color: #3A292B;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display:none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    color: pink;
+}
+
+
+/* Footer */
+footer {
+    background-color: #3A292B;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #3E2F2F;
+    color: #EFD2CE;
+    display: flex;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Modal Left (Image/Video Section) */
+.modal-left {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.modal-left img,
+.modal-left video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Modal Right (Text Section) */
+.modal-right {
+    flex: 1;
+}
+.modal-right {
+    padding: 1rem;
+    color: #EFD2CE;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.modal-right h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #EFD2CE;
+    text-transform: capitalize;
+}
+
+.modal-right p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #EFEDE7;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
