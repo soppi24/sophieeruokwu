@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+<!-- Main Navigation Bar -->
+<header class="main-navbar">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Portfolio Navigation Bar -->
+<header class="portfolio-navbar">
+    <nav>
+        <ul>
+            <li><a href="#" data-filter="all">All</a></li>
+            <li><a href="#" data-filter="games">Games</a></li>
+            <li><a href="#" data-filter="functional">Functional Applications</a></li>
+            <li><a href="#" data-filter="modeling">Modeling</a></li>
+            <li><a href="#" data-filter="misc">Miscellaneous</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Portfolio Section -->
+<section class="portfolio">
+    <div class="project" data-category="games">
+        <div class="tag">Game</div>
+        <img src="ProjectContent/space.png" alt="Space Invaders" class="project-thumbnail">
+        <h3>Space Invaders</h3>
+        <p>'Space Intakers’, a game that was a twist on the original classic  Space Invaders, would be what I consider my first official game, made in Java.
+            It was originally an assignment for one of my many first-year CS courses,
+            but I decided it was too good to leave in the past, and I prefer to carry it with me as a symbol of
+            how far I’ve come and learned in my journey to being a game designer
+            and creator.</p>
+    </div>
+    <div class="project" data-category="games">
+        <div class="tag">Game</div>
+        <img src="ProjectContent/christmas.png" alt="Another Game" class="project-thumbnail">
+        <h3>2024 Christmas Games</h3>
+        <p>A fun web project I made as a Christmas gift for each of my family members, giving them a personalized password to interact with their equally personalized character. It was a simple platform game that when a player reached the end  (essentially wining) and clicked on the snowy cabin, their Christmas card messages was presented to them :). The site can be sampled here on a laptop, and with the password ‘guest’</p>
+    </div>
+    <p></p>
+    <div class="project" data-category="games">
+        <div class="tag">Game</div>
+        <img src="ProjectContent/brick.png" alt="Another Game" class="project-thumbnail">
+        <h3>Brick breaker</h3>
+        <p> A simple brick breaker game I made in unity</p>
+    </div>
+    <div class="project" data-category="games">
+        <div class="tag">Game</div>
+        <img src="ProjectContent/nln.png" alt="Another Game" class="project-thumbnail">
+        <h3>Nightlight Nightmares</h3>
+        <p> An itch.io game Jam entry made with a team of 2 people, based on the theme of Defense on the constraint of ‘limited resources. We decided to go with the idea of a girl character protecting her RV camper form evil entities ( a set amount, after which she wins) with here flashlight, which runs down the longer it is kept on.  My role was primarily the coding aspect, but it did some concept art too, such as the main character</p>
+    </div>
+    <div class="project" data-category="functional">
+        <div class="tag">Functional</div>
+        <h3>JSON Scanner</h3>
+        <p>For one of my course work assignments, I build a simple json scanner
+            and parser for a theory of computation class. Now, it might not
+            seem like a lot, but a key thing I got form this project, was
+            overcoming my fear of Python (as an avid Java user). I learned to
+            explore, debug and create what I wanted with the language, and it's
+            still something I'm proud of today</p>
+    </div>
+    <div class="project" data-category="functional">
+        <div class="tag">Functional</div>
+        <img src="ProjectContent/site.png" alt="JSON Scanner" class="project-thumbnail">
+        <h3>Personal Website</h3>
+        <p>A final project from my web dev course, that involved HTML, CSS and JS.  I spent a lot of time perfecting the design, style and put my very best in the assignment. The effort paid off—so much so that the teaching assistant reached out to me personally, praising my work and expressing interest in using it as an exemplary project for future students. I was so honored. This site was also the template for this new site you’re currently on (all art done by yours truly)</p>
+    </div>
+    <div class="project" data-category="modeling">
+        <div class="tag">Modeling</div>
+        <img src="ProjectContent/rosa.png" alt="3D Model" class="project-thumbnail">
+        <h3>Rosa Game Model</h3>
+        <p>A 3d prototype  made in blender for a game jam entry Nightlight Nightmares. This would be for a future and more interactive version of the current game</p>
+    </div>
+    <div class="project" data-category="modeling">
+        <div class="tag">Modeling</div>
+        <img src="ProjectContent/pup.png" alt="3D Model" class="project-thumbnail">
+        <h3>3D person in house </h3>
+        <p>A unity 3d open world game to practice Unity 3d game mechanics for future projects</p>
+    </div>
+    <div class="project" data-category="modeling">
+        <div class="tag">Modeling</div>
+        <img src="ProjectContent/horror.png" alt="3D Model" class="project-thumbnail">
+        <h3>3D PSX Scenery </h3>
+        <p>A horror focused open world, as a prototype for a future game</p>
+    </div>
+    <div class="project" data-category="misc">
+        <div class="tag">Misc</div>
+        <img src="ProjectContent/hailey.png" alt="Miscellaneous" class="project-thumbnail">
+        <h3>Hailey Quarks and the Great Charity Race (2023)</h3>
+        <p>My second published Children’s book, following the adventures of a feisty but kind-hearted 3rd grader and her adventures.</p>
+    </div>
+    <div class="project" data-category="misc">
+        <div class="tag">Misc</div>
+        <img src="ProjectContent/usk.png" alt="Miscellaneous" class="project-thumbnail">
+        <h3>The USK (2022)</h3>
+        <p>My first published children’s book, following an immigrant black girl who struggles to fit in after her family moves to a new town (inspired by my life events). The book's proceed were given to an organization focused on empowering immigrant children)</p>
+    </div>
+</section>
+
+
+
+
+<script src="portfolio.js"></script>
+</body>
+</html>
