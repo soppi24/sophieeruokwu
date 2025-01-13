@@ -1,0 +1,280 @@
+/* General Styling */
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('cormorantGaramond.otf');
+}
+
+* {
+    font-family: 'Cormorant Garamond', sans-serif; /* Universal Font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3A292B;
+    color: #EFD2CE;
+}
+
+/* Main Navigation Bar */
+header.main-navbar {
+    position: relative; /* No longer sticky */
+    width: 100%; /* Full width */
+    background-color: #3A292B; /* Darker theme color */
+    padding: 1rem 0; /* Add vertical padding */
+    z-index: 1000; /* Ensure it's above the background */
+}
+
+header.main-navbar nav ul {
+    display: flex; /* Align items horizontally */
+    justify-content: space-evenly; /* Even spacing */
+    align-items: center; /* Center vertically */
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+header.main-navbar nav ul li a {
+    font-size: 0.9rem; /* Slightly smaller font size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 0.5em; /* Reduced letter spacing */
+    color: #EFEDE7; /* Match the light theme text color */
+    text-decoration: none;
+    padding: 0.5rem; /* Add padding for clickable area */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+header.main-navbar nav ul li a:hover {
+    color: grey;
+}
+
+/* Portfolio Navigation Bar */
+header.portfolio-navbar {
+    background-color: #3A292B;
+    padding: 1rem;
+    text-align: center;
+}
+
+header.portfolio-navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+header.portfolio-navbar nav ul li a {
+    text-decoration: none;
+    color: #EFEDE7;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header.portfolio-navbar nav ul li a:hover {
+    background-color: #EAB0AA;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project {
+    width: 300px;
+    background-color: #3E2F2F;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #EFEDE7;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Space between project boxes */
+    justify-content: center;
+    padding: 2rem;
+    background-color: #3A292B; /* Matches overall theme */
+}
+
+/* Project Box */
+.project {
+    width: 300px; /* Fixed width for consistency */
+    background-color: #3E2F2F; /* Brown box color */
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center;
+    position: relative; /* For the tag placement */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Project Hover Effect */
+.project:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Thumbnail (Rounded Image) */
+.project-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular thumbnail */
+    margin-bottom: 1rem;
+}
+
+/* Project Title */
+.project h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #EFD2CE; /* Light text color */
+}
+
+/* Project Description */
+.project p {
+    font-size: 0.9rem;
+    color: #EFEDE7;
+}
+
+/* Category Tag */
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #EAB0AA; /* Accent color for tags */
+    color: #3A292B;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display:none;
+}
+a {
+    color: white; /* Initial color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+a:visited {
+    color: pink; /* Color after being clicked */
+}
+
+a:hover {
+    color: grey; /* Optional: Add hover effect */
+}
+
+a:active {
+    color: pink; /* Ensure the color stays consistent while clicking */
+}
+
+
+/* Footer */
+footer {
+    background-color: #3A292B;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Modal Background */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #3E2F2F;
+    color: #EFD2CE;
+    display: flex;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Modal Left (Image/Video Section) */
+.modal-left {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.modal-left img,
+.modal-left video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Modal Right (Text Section) */
+.modal-right {
+    flex: 1;
+}
+.modal-right {
+    padding: 1rem;
+    color: #EFD2CE; /* Light text color to match the theme */
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Cormorant Garamond', serif; /* Elegant font for readability */
+}
+
+.modal-right h2 {
+    font-size: 2rem; /* Larger heading size */
+    margin-bottom: 1rem; /* Space below the title */
+    color: #EFD2CE; /* Match the modal text color */
+    text-transform: capitalize; /* Ensure title case for the text */
+}
+
+.modal-right p {
+    font-size: 1.1rem; /* Slightly larger for readability */
+    line-height: 1.8; /* Add space between lines for better readability */
+    color: #EFEDE7; /* Match the light theme text color */
+    text-align: justify; /* Justify text for a polished look */
+    margin: 0 auto; /* Center the text block */
+    max-width: 90%; /* Limit the width for better layout */
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
